@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d2f8d3d3f9c76840a1805f8ed191fcb, type: 3}
+  m_Name: GreatSwordBossDefinition
+  m_EditorClassIdentifier: 
+  enemyId: GreatSwordBoss
+  displayName: GreatSwordBoss
+  behaviorTreeAsset: {fileID: 11400000, guid: 1b048bc8ab92bcd449b2c7527db2c1ca, type: 2}
+  movementConfig:
+    moveSpeed: 2
+    rotateSpeed: 4
+    attackRotateSpeed: 2
+    stoppingDistance: 1.1
+    navMeshSampleDistance: 2
+    patrolWaitDuration: 2
+  perceptionConfig:
+    range: 20
+    soundRange: 6
+    angle: 360
+    closeAwarenessRange: 2.5
+    loseSightGraceTime: 0.5
+    alertMemoryDuration: 4
+    searchObservationDuration: 5
+    searchRadius: 4
+    searchPointCount: 0
+    targetMask:
+      serializedVersion: 2
+      m_Bits: 128
+    obstacleMask:
+      serializedVersion: 2
+      m_Bits: 0
+  animationConfig:
+    idleAnimation: Idle
+    combatIdleAnimation: CombatIdle
+    combatIdleMoveLeftAnimation: MoveLeft
+    combatIdleMoveRightAnimation: MoveRight
+    enterCombatAnimation: EnterCombat
+    exitCombatAnimation: ExitCombat
+    turnAnimation: Turn
+    alertMoveAnimation: AlertMove
+    moveAnimation: Move
+    runAnimation: Run
+    defenseAnimation: Defense
+    defenseHitAnimation: DefenseHit
+    retreatAnimation: Retreat
+    getHitAnimation: GetHit
+    defenseBreakAnimation: DefenseBreak
+    unbalanceStartAnimation: UnbalanceStart
+    unbalanceStartTrigger: UnbalanceStart
+    unbalanceLoopAnimation: UnbalanceLoop
+    unbalanceEndAnimation: UnbalanceEnd
+    unbalanceEndTrigger: UnbalanceEnd
+    unbalanceLoopDuration: 3
+    deadAnimation: Dead
+    transitionDuration: 0.2
+  combatConfig:
+    basicAttacks:
+    - skillId: 20401
+      animationName: CloseRangeAttack1_0
+      weight: 1
+      enableAttackDistanceCheck: 1
+    - skillId: 20402
+      animationName: CloseRangeAttack1_1
+      weight: 0
+      enableAttackDistanceCheck: 0
+    - skillId: 20403
+      animationName: CloseRangeAttack1_2
+      weight: 0
+      enableAttackDistanceCheck: 0
+    - skillId: 20404
+      animationName: CloseRangeAttack1_3
+      weight: 0
+      enableAttackDistanceCheck: 0
+    - skillId: 20405
+      animationName: CloseRangeAttack2_0
+      weight: 1
+      enableAttackDistanceCheck: 1
+    - skillId: 20406
+      animationName: CloseRangeAttack2_1
+      weight: 0
+      enableAttackDistanceCheck: 0
+    approachAttacks:
+    - skillId: 20407
+      animationName: ApproachAttack1
+      weight: 1
+      enableAttackDistanceCheck: 1
+    - skillId: 20408
+      animationName: ApproachAttack2
+      weight: 0.4
+      enableAttackDistanceCheck: 1
+    pursuitAttacks: []
+    retreatAttacks:
+    - skillId: 20409
+      animationName: CloseRangeAttack3_0
+      weight: 1
+      enableAttackDistanceCheck: 1
+    - skillId: 20410
+      animationName: Dodge
+      weight: 1
+      enableAttackDistanceCheck: 1
+    closeAttackPoolWeight: 1
+    retreatAttackPoolWeight: 1
+    retreatWeightBonusAfterCloseAttack: 1
+    retreatWeightBonusLimit: 4
+    resetRetreatBonusAfterRetreat: 1
+    counterAttack:
+      skillId: 20410
+      animationName: Dodge
+      weight: 1
+      enableAttackDistanceCheck: 0
+    comboBranches:
+    - startSkillId: 20401
+      sequenceSkillIds: b24f0000b34f0000b44f0000
+      probability: 1
+    - startSkillId: 20405
+      sequenceSkillIds: b64f0000
+      probability: 1
+    - startSkillId: 20409
+      sequenceSkillIds: ba4f0000
+      probability: 1
+    counterBlockThreshold: 2
+    combatEnterRange: 7
+    chaseRange: 8
+    combatMemoryDuration: 99
+    canInterruptAttack: 0
+  lifeConfig:
+    rememberTargetOnHit: 1
+    allowUnbalanceReaction: 1
+    allowDeathReaction: 1
+  attributeConfig:
+    maxHealth: 950
+    maxStability: 360
+    attack: 68
+    defense: 12
+    moveSpeedMultiplier: 1
+    perceptionMultiplier: 1
+  decisionProfile:
+    attackDesire: 0.5
+    defenseRate: 0.35
+    defenseDuration: 1.5
+    attackDecisionCooldown: 1
+    attackWeightCompensationPerMiss: 1
+    attackWeightGuaranteeMissCount: 2
+    dodgeRate: 0.8
+    dodgeCooldown: 4
+    lowStabilityThreshold: 0.25
+  dropItems: []

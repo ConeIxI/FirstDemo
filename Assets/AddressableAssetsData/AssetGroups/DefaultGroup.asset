@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: DefaultGroup
+  m_EditorClassIdentifier: 
+  m_GroupName: DefaultGroup
+  m_Data:
+    m_SerializedData: []
+  m_GUID: e6147f8cad6760a4aadaf4d11ad380c8
+  m_SerializeEntries:
+  - m_GUID: 483046f8e0381e746a3d316fd3f13361
+    m_Address: WorldDropItem
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4f46c594e1671514c93f84a69d530395
+    m_Address: Assets/Res/Prefabs/Character/Player/Player.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9a3fb59e28e3ee9478c3e0a7bc15b189
+    m_Address: Assets/Res/Prefabs/Character/Player/PlayerPreview.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d903ed6e324a1774494e2b5bccf55e64
+    m_Address: Character/Gobal.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: ed189498372abf94dad74f229b2fbc5f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 3fcb8e0e12c2aa04bae6a3e6c5b6ae3a, type: 2}
+    - {fileID: 11400000, guid: 3db948c8299a2b048a6e4853642526d2, type: 2}

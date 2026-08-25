@@ -1,0 +1,370 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: IconGroup
+  m_EditorClassIdentifier: 
+  m_GroupName: IconGroup
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 878aeb52762291248836eefb92265166
+  m_SerializeEntries:
+  - m_GUID: 035425bc3d64e1046adb595aca137241
+    m_Address: UI/Atlas/Equip/Icon_Equip_Helmet_02.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 035750f77a24bce47ab1d76576f1de5a
+    m_Address: Assets/Res/Sprite/clipboard7b84_32_tall_dark_panel_patterned_final_1024.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 04c7eb933e75e527aa95740e20148b40
+    m_Address: Assets/Res/Sprite/Atlas/Common/Icon_Key_Q.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 04fe97c783373f64a838fd8f3518ffb2
+    m_Address: Assets/Res/Sprite/Atlas/Common/clipboard7b84_02_tab_items_selected.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0dc5fb405f29a52488aad4bda182fe49
+    m_Address: Assets/Res/Sprite/Atlas/Common/clipboard7b84_09_card_chest_armor.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0ebfbddd8217e4a43a6071dfd0c052b4
+    m_Address: Assets/Res/Sprite/clipboard7b84_32_tall_dark_panel.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1139c8445e7a12e499fda3c7ed796f0e
+    m_Address: UI/Atlas/Equip/Icon_Equip_LegGuards_03.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1641370832d55424abb75d03f873486e
+    m_Address: UI/Atlas/Skill/Skill_Spear1.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 17707508971720a394ca3ca6916e442b
+    m_Address: Assets/Res/Sprite/Atlas/Common/Icon_Key_1.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 18dbbaac8de88e34bb12fc4b167fb059
+    m_Address: Assets/Res/Sprite/Atlas/Common/clipboard7b84_01_close_button_hover.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1bf65d0a757b9024083f491b3a35da71
+    m_Address: UI/Atlas/Equip/Icon_Equip_Spear.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1dcbd6820ac22d64ca8df577157397f3
+    m_Address: UI/Atlas/Equip/Icon_Equip_LegGuards.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1fa949b3f37957641884814cc6bba760
+    m_Address: Assets/Res/Sprite/clipboard7b84_29_large_panel.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 22eb570a7a27b6f47aed7be6c5281d4c
+    m_Address: UI/Atlas/Equip/Icon_Equip_ChestArmor_02.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 25a4773c442fbdd438d74cd7dc5cdf6d
+    m_Address: Assets/Res/Sprite/MainMenuBackground.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2a1e141d61e62d47c9ba0535f4c2fb75
+    m_Address: Assets/Res/Sprite/Atlas/Common/Icon_Key_2.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 370c98fa2aec45a3a75f778948ffc9f2
+    m_Address: Assets/Res/Sprite/Atlas/Common/UI_HpBar_BaseFrame.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3c733d416df04e5e8321a50399cb7eb5
+    m_Address: Assets/Res/Sprite/Atlas/Common/UI_BaseBar_Fill_white.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 440c663678a66da46a068c0784935a13
+    m_Address: UI/Atlas/Skill/Skill_Sword1.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 46679dda2fee4f341b3c1cfaaaabfa4a
+    m_Address: Assets/Res/Sprite/Atlas/Common/clipboard7b84_31_single_square_slot.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 46e36aef5448c0e4ab3f2a632ee8ea31
+    m_Address: Assets/Res/Sprite/RenderTexture/PlayerCloneTexture.renderTexture
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4a67599cd6544b74bbc2f33e351f393c
+    m_Address: UI/Atlas/Equip/Icon_Equip_ArmGuards_03.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4ae157232bb997140a8456ed98c9489a
+    m_Address: UI/Atlas/Equip/Icon_Equip_LegGuards_04.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4e81a1b45ef1c184fb2a1cd0c35c1a51
+    m_Address: UI/Atlas/Equip/Icon_Equip_LegGuards_02.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4e9b608ca7dfe8648a081244925c74b5
+    m_Address: Assets/Res/Sprite/Atlas/Common/clipboard7b84_01_close_button.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 518d0f1dea5bf790ee89b1d048b08e1b
+    m_Address: Assets/Res/Sprite/Atlas/Common/Icon_Key_3.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 52b26006364b04e42928b30dbfa0eaad
+    m_Address: Assets/Res/Sprite/Atlas/Common/PureColorBar_10x10.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 537146ce165e98d418e613209fe5eeca
+    m_Address: Assets/Res/Sprite/Atlas/Common/Icon_SkillSlot_BaseFrame.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 54223cd7cf4c15342aa8b83aebd1b001
+    m_Address: Assets/Res/Sprite/Atlas/Common/clipboard7b84_03_tab_weapon.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 559455fda91df5940b914af7d7447375
+    m_Address: UI/Atlas/Skill/Skill_Sword3.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 648216889df49704b9b69bbac1a35190
+    m_Address: Assets/Res/Sprite/ItemPanelBg.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 689cab3e3d86029459af4d9de2c9a2c9
+    m_Address: UI/Atlas/Equip/Icon_Equip_Sword.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 69ae4133b98c75646955b8cc0f4dc085
+    m_Address: Assets/Res/Sprite/PlayerControls_Extra.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 69cd6a82ba2d65c4d9f10327dff039dd
+    m_Address: UI/Atlas/Equip/Icon_Equip_Helmet_03.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 714aed47f74806d46830a3748343578b
+    m_Address: UI/Atlas/Equip/Icon_Equip_ArmGuards_02.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7ccfae785cbea7348b3e812a65e9be26
+    m_Address: Assets/Res/Sprite/Atlas/Equip.spriteatlasv2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7dd950eb2e697d948815232b15874b59
+    m_Address: Assets/Res/Sprite/Atlas/Item.spriteatlasv2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7f8ae3704921081428ee6135ed0ae040
+    m_Address: Assets/Res/Sprite/Atlas/Common/clipboard7b84_33_green_quickslot_panel.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 80712cb0aaec4914cab5cf200c8b066e
+    m_Address: UI/Atlas/Equip/Icon_Equip_ChestArmor.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 84bac25998369604788cce3cb3850990
+    m_Address: Assets/Res/Sprite/Atlas/Common/clipboard7b84_08_card_helmet.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 863c3e080e626cfcd226a10811d143fe
+    m_Address: Assets/Res/Sprite/Atlas/Common/Icon_Key_4.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 89da6189643c7704983e3023515dc721
+    m_Address: Assets/Res/Sprite/lumio-result-20260726-170253-01.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 92709ffb13d7f1240b21cb55aea8170d
+    m_Address: UI/Atlas/Skill/Skill_Spear2.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 987ed34ffc58e4048a0ef12b8b2517e7
+    m_Address: Assets/Res/Sprite/Atlas/Common/clipboard7b84_34_long_divider.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9b70b251862f1c149a4398f819290450
+    m_Address: UI/Atlas/Equip/Icon_Equip_ChestArmor_03.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a0d8569915724464bb1d14b68c0a2f40
+    m_Address: UI/Atlas/Equip/Icon_Equip_ArmGuards.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a355b36ff436bf54886378ecab3bc29a
+    m_Address: UI/Atlas/Item/AttackPotion.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a38aa4c59b07fc6e2d4a8780905383f6
+    m_Address: Assets/Res/Sprite/Atlas/Common/Icon_Key_E.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a5e04f007c6dd964eafe3f340acf8a67
+    m_Address: UI/Atlas/Item/DefencePotion.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a70918f2dde0a034f8664d92f4ef122b
+    m_Address: Assets/Res/Sprite/Atlas/Common/clipboard7b84_11_card_leggings.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a9154539632dbf349a22782eb975698d
+    m_Address: Assets/Res/Sprite/Atlas/Common.spriteatlasv2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aef25f4d9f2fd2b4aa2d3a1deabb30b2
+    m_Address: Assets/Res/Sprite/PlayerControls.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b102d7e1d54a895b566540847f588db0
+    m_Address: Assets/Res/Sprite/Atlas/Common/Icon_Key_F.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: be5df2337196a364d9dcd579463fb771
+    m_Address: UI/Atlas/Equip/Icon_Equip_Helmet.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c5c4e7d24f0f5bc0fe1e811cf2ee62ec
+    m_Address: Assets/Res/Sprite/Atlas/Common/Icon_Key_R.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c6392ecc6a4f06b43a7513016e08d9df
+    m_Address: Assets/Res/Sprite/Atlas/Common/Icon_Key_Tab.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c689d77e39f233041a5da01e229e5ee7
+    m_Address: Assets/Res/Sprite/Atlas/Skill.spriteatlasv2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c6cfd6d21885cfa41b91b68be7e69ef9
+    m_Address: Assets/Res/Sprite/Atlas/Common/clipboard7b84_10_card_glove.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ca5c1d8b858960e4eb1359664b65dc3e
+    m_Address: UI/Atlas/Skill/Skill_Spear3.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cf8537ca200f0354ebb67888f3258602
+    m_Address: UI/Atlas/Item/LifePotion.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d03cd00e9d0a032448f576633ec8d7d0
+    m_Address: Assets/Res/Sprite/lumio-result-20260726-170253-01_empty_frame.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d23d593d30a9b4948855287dee90db74
+    m_Address: UI/Atlas/Skill/Skill_Sword2.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d66f4d2b4c55f144c943073f30ab3573
+    m_Address: Assets/Res/Sprite/Atlas/Common/clipboard7b84_01_close_button_pressed.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e2835d00493ff8e46a6f5dca6c04c650
+    m_Address: Assets/Res/Sprite/Atlas/Common/RoundedRectFrame_100x10.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e447ee670168731a8e23398912e5c245
+    m_Address: Assets/Res/Sprite/Atlas/Common/Icon_ItemSlot_BaseFrame.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eb05cdee6fb0e3242b59137a46eb131a
+    m_Address: UI/Atlas/Equip/Icon_Equip_ChestArmor_04.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ed267fc623776a24686539633d3e4540
+    m_Address: UI/Atlas/Equip/Icon_Equip_Helmet_04.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ee3c7f98a164bf64cb09190ac0393a03
+    m_Address: Assets/Res/Sprite/Atlas/Common/UI_HpBar_Fill_Red 1.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fa03a47a9e31197438b7a2f40fa674c3
+    m_Address: UI/Atlas/Equip/Icon_Equip_ArmGuards_04.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: ed189498372abf94dad74f229b2fbc5f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 2137b75db717eb94da47a45464e8f28b, type: 2}
+    - {fileID: 11400000, guid: 36723eb7274f5cc46a1e82a783ea89f5, type: 2}

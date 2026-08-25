@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "王室亲卫护腿",
+    "iconAddress": "UI/Atlas/Equip/Icon_Equip_LegGuards.png",
+    "prefabAddress": "",
+    "objectName" : "Leg01",
+    "minDefense": 2,
+    "maxDefense": 3
+  },
+  {
+    "id": 2,
+    "name": "双色骑士护腿",
+    "iconAddress": "UI/Atlas/Equip/Icon_Equip_LegGuards_02.png",
+    "prefabAddress": "",
+    "objectName" : "Leg02",
+    "minDefense": 4,
+    "maxDefense": 5
+  },
+  {
+    "id": 3,
+    "name": "金纹护腿",
+    "iconAddress": "UI/Atlas/Equip/Icon_Equip_LegGuards_03.png",
+    "prefabAddress": "",
+    "objectName" : "Leg03",
+    "minDefense": 6,
+    "maxDefense": 8
+  },
+  {
+    "id": 4,
+    "name": "王冠骑士护腿",
+    "iconAddress": "UI/Atlas/Equip/Icon_Equip_LegGuards_04.png",
+    "prefabAddress": "",
+    "objectName" : "Leg04",
+    "minDefense": 9,
+    "maxDefense": 11
+  }
+]

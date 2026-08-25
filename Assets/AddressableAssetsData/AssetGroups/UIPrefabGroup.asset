@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: UIPrefabGroup
+  m_EditorClassIdentifier: 
+  m_GroupName: UIPrefabGroup
+  m_Data:
+    m_SerializedData: []
+  m_GUID: fbb9156026af8b44298515ec8038b0a5
+  m_SerializeEntries:
+  - m_GUID: 064e0b2d29e30cc4f8f777bba5f0e4cd
+    m_Address: UI/DeathPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1dba9fb52bb7f124087b50be5fbd3a67
+    m_Address: UI/VictoryPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5e1735fa008e4e0408944864e3113712
+    m_Address: UI/ConfirmDialogPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5f3101faf90ce2e4c92e268119caf179
+    m_Address: UI/PickupTipPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6004fc8336327004f968da94bde872b5
+    m_Address: UI/BossHealthPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6c2d1d288b061064c92f3f4009700e20
+    m_Address: UI/PausePanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 756f1f918c66bcb4c92a7879472a6f24
+    m_Address: UI/MainMenuPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9d0bb5a4150b7b548ad53cc2c5a4e189
+    m_Address: UI/LoadingPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b0b24f298adcc0b4d86400645773876b
+    m_Address: UI/SettingsPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bd3cbe1c7a788a445abdd6ffe9211cc1
+    m_Address: UI/ToastPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d8016080e758cdc42b96e841aa7e80f4
+    m_Address: UI/BattleHudPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f87d5c2b2d204069845644094646fca5
+    m_Address: UI/PlayerControlsPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fc6d784e7c99702438e9c1127c26e1ea
+    m_Address: UI/BagPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: ed189498372abf94dad74f229b2fbc5f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 338296c26e822324ca565990828d8e44, type: 2}
+    - {fileID: 11400000, guid: 057cb003c3c011546805314671d9fd9a, type: 2}

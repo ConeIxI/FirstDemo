@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "王室亲卫胸甲",
+    "iconAddress": "UI/Atlas/Equip/Icon_Equip_ChestArmor.png",
+    "prefabAddress": "",
+    "objectName" : "Cuirass01",
+    "minDefense": 7,
+    "maxDefense": 9
+  },
+  {
+    "id": 2,
+    "name": "双色骑士胸甲",
+    "iconAddress": "UI/Atlas/Equip/Icon_Equip_ChestArmor_02.png",
+    "prefabAddress": "",
+    "objectName" : "Cuirass02",
+    "minDefense": 13,
+    "maxDefense": 16
+  },
+  {
+    "id": 3,
+    "name": "金纹胸甲",
+    "iconAddress": "UI/Atlas/Equip/Icon_Equip_ChestArmor_03.png",
+    "prefabAddress": "",
+    "objectName" : "Cuirass03",
+    "minDefense": 20,
+    "maxDefense": 24
+  },
+  {
+    "id": 4,
+    "name": "王冠骑士胸甲",
+    "iconAddress": "UI/Atlas/Equip/Icon_Equip_ChestArmor_04.png",
+    "prefabAddress": "",
+    "objectName" : "Cuirass04",
+    "minDefense": 28,
+    "maxDefense": 35
+  }
+]

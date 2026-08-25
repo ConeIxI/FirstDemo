@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: ConfigGroup
+  m_EditorClassIdentifier: 
+  m_GroupName: ConfigGroup
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 7a39680053f08784fbb54db37f58f08a
+  m_SerializeEntries:
+  - m_GUID: 1a87896ef75334d49815a812640a1f03
+    m_Address: Data/ItemConfig/LeggingsItemConfig.json
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1cac327d348e0e74eb78ed7e33aef403
+    m_Address: Data/ItemConfig/GlovesItemConfig.json
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1f1733e1b3ff4b7dbc2b9e2798ea58ed
+    m_Address: Data/WeaponConfig/SpearSkillConfig.json
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 38cf46c1dbec54d46ad5704d39daecb3
+    m_Address: Data/ItemConfig/WeaponItemConfig.json
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3b67e7973bf35da41aaada4e953ae0e4
+    m_Address: Data/ItemConfig/ConsumableItemConfig.json
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4aa120cbf6754247a44a67940f98af6a
+    m_Address: Data/WeaponConfig/SingleSwordSkillConfig.json
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6e250ac5929342f6827f6b2c8a793215
+    m_Address: Data/EnemySkillConfig.json
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a8a0523c63d48af408385c5fb72a8ecb
+    m_Address: Data/BuffConfig.json
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ca1ad1ed96f24ba4b93661d062df1a5a
+    m_Address: Data/SoundCatalog.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ca7c94dc58b7d1240b6a72881138e2b1
+    m_Address: Data/ItemConfig/HelmetItemConfig.json
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e1d227f806558ad4d9cda54100f4640e
+    m_Address: Data/CombatEffectConfig.json
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ffcebdb16d8c3764dacc833831348321
+    m_Address: Data/ItemConfig/ArmorItemConfig.json
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: ed189498372abf94dad74f229b2fbc5f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 56149bf4e1c1ad14f824431a4952644f, type: 2}
+    - {fileID: 11400000, guid: 59ca5dfc30c47e14994b9fce07098de2, type: 2}

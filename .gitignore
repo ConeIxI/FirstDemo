@@ -1,0 +1,63 @@
+*
+!*/
+
+# 仓库基础文件
+!.gitignore
+!/README.md
+
+# Unity 工程配置
+!ProjectSettings/
+!ProjectSettings/**
+!Packages/
+!Packages/manifest.json
+!Packages/packages-lock.json
+!Packages/Puerts/
+!Packages/Puerts/**
+
+# 项目代码与配置数据
+!Assets/
+!Assets/*.meta
+!Assets/Framework/
+!Assets/Framework/**
+!Assets/Game/
+!Assets/Game/**
+!Assets/Data/
+!Assets/Data/**
+!Assets/AddressableAssetsData/
+!Assets/AddressableAssetsData/**
+!Assets/Scenes/
+!Assets/Scenes/**
+
+# TextMesh Pro 运行所需基础资源，不提交示例工程
+!Assets/TextMesh Pro.meta
+!Assets/TextMesh Pro/
+!Assets/TextMesh Pro/Fonts.meta
+!Assets/TextMesh Pro/Fonts/
+!Assets/TextMesh Pro/Fonts/**
+!Assets/TextMesh Pro/Resources.meta
+!Assets/TextMesh Pro/Resources/
+!Assets/TextMesh Pro/Resources/**
+!Assets/TextMesh Pro/Shaders.meta
+!Assets/TextMesh Pro/Shaders/
+!Assets/TextMesh Pro/Shaders/**
+!Assets/TextMesh Pro/Sprites.meta
+!Assets/TextMesh Pro/Sprites/
+!Assets/TextMesh Pro/Sprites/**
+
+# 文档
+!docs/
+!docs/**
+
+# Assets/Res 作为 Release 附件手动补齐，不进入 Git 仓库
+Assets/Res/**
+
+# 本地生成目录
+.idea/
+Library/
+Temp/
+Obj/
+Logs/
+UserSettings/
+.worktrees/
+.codedb-mcp/
+layer-designer/**/.venv/

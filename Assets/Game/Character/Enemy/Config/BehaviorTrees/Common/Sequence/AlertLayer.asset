@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c8843f1fede0942b00f78db5af55e5, type: 3}
+  m_Name: AlertLayer
+  m_EditorClassIdentifier:
+  nodeName:
+  children:
+  - {fileID: 11400000, guid: dd97c453672191b41b600c857bec5f3a, type: 2}
+  - {fileID: 11400000, guid: 9772d74b1e87bcb4c8bc0194389f4b0a, type: 2}

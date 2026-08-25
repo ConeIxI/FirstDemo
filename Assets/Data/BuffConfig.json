@@ -1,0 +1,46 @@
+[
+  {
+    "buffId": 1001,
+    "buffName": "攻击强化",
+    "type": "AttackModifier",
+    "duration": 15.0,
+    "flatValue": 10,
+    "percentValue": 0,
+    "tickInterval": 0.0,
+    "tickValue": 0,
+    "activeEffectId": "Buff_Attack_Active"
+  },
+  {
+    "buffId": 1002,
+    "buffName": "防御强化",
+    "type": "DefenseModifier",
+    "duration": 15.0,
+    "flatValue": 15,
+    "percentValue": 0,
+    "tickInterval": 0.0,
+    "tickValue": 0,
+    "activeEffectId": "Buff_Defense_Active"
+  },
+  {
+    "buffId": 2001,
+    "buffName": "持续回血",
+    "type": "HealthRegen",
+    "duration": 6.0,
+    "flatValue": 0,
+    "percentValue": 0.0,
+    "tickInterval": 1.0,
+    "tickValue": 30,
+    "activeEffectId": "Buff_Regen_Active"
+  },
+  {
+    "buffId": 2002,
+    "buffName": "持续扣血",
+    "type": "HealthDamage",
+    "duration": 6.0,
+    "flatValue": 0,
+    "percentValue": 0.0,
+    "tickInterval": 1.0,
+    "tickValue": 5,
+    "activeEffectId": "Buff_Damage_Active"
+  }
+]

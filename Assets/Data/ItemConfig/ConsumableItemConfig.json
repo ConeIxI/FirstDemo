@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "生命药",
+    "iconAddress": "UI/Atlas/Item/LifePotion.png",
+    "prefabAddress": "",
+    "buffId": 2001
+  },
+  {
+    "id": 2,
+    "name": "攻击强化药",
+    "iconAddress": "UI/Atlas/Item/AttackPotion.png",
+    "prefabAddress": "",
+    "buffId": 1001
+  },
+  {
+    "id": 3,
+    "name": "防御强化药",
+    "iconAddress": "UI/Atlas/Item/DefencePotion.png",
+    "prefabAddress": "",
+    "buffId": 1002
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "单手剑",
+    "iconAddress": "UI/Atlas/Equip/Icon_Equip_Sword.png",
+    "prefabAddress": "",
+    "objectName": "SingleSword",
+    "attack": 15,
+    "skillIconAddresses": ["UI/Atlas/Skill/Skill_Sword1.png", "UI/Atlas/Skill/Skill_Sword2.png", "UI/Atlas/Skill/Skill_Sword3.png"]
+  },
+  {
+    "id": 2,
+    "name": "长枪",
+    "iconAddress": "UI/Atlas/Equip/Icon_Equip_Spear.png",
+    "prefabAddress": "",
+    "objectName": "Spear",
+    "attack": 15,
+    "skillIconAddresses": ["UI/Atlas/Skill/Skill_Spear1.png", "UI/Atlas/Skill/Skill_Spear2.png", "UI/Atlas/Skill/Skill_Spear3.png"]
+  }
+]

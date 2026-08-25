@@ -1,0 +1,1736 @@
+[
+  {
+    "skillId": 20001,
+    "skillName": "剑盾左劈",
+    "hitWeight": 0,
+    "attackRange": 2,
+    "comboNextSkillId": 20002,
+    "hitConfig": {
+      "attackMultiplier": 1.2,
+      "stabilityDamage": 15,
+      "hitStopTime": 0.06,
+      "moveBackDistance": 0,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 1,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20002,
+    "skillName": "剑盾右劈",
+    "hitWeight": 0,
+    "attackRange": 2,
+    "comboNextSkillId": 20003,
+    "hitConfig": {
+      "attackMultiplier": 1.2,
+      "stabilityDamage": 15,
+      "hitStopTime": 0.06,
+      "moveBackDistance": 0,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 1,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20003,
+    "skillName": "盾击",
+    "hitWeight": 0,
+    "attackRange": 2,
+    "comboNextSkillId": 0,
+    "hitConfig": {
+      "attackMultiplier": 1.2,
+      "stabilityDamage": 15,
+      "hitStopTime": 0.06,
+      "moveBackDistance": 0,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 2,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20004,
+    "skillName": "蓄力重劈",
+    "hitWeight": 0,
+    "attackRange": 2,
+    "comboNextSkillId": 0,
+    "hitConfig": {
+      "attackMultiplier": 1.2,
+      "stabilityDamage": 15,
+      "hitStopTime": 0.06,
+      "moveBackDistance": 0.7,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 2,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20005,
+    "skillName": "蓄力突刺",
+    "hitWeight": 0,
+    "attackRange": 2,
+    "comboNextSkillId": 0,
+    "hitConfig": {
+      "attackMultiplier": 1.2,
+      "stabilityDamage": 15,
+      "hitStopTime": 0.06,
+      "moveBackDistance": 0.7,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 2,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20101,
+    "skillName": "大剑右扫",
+    "hitWeight": 1,
+    "attackRange": 2,
+    "comboNextSkillId": 0,
+    "hitConfig": {
+      "attackMultiplier": 1.6,
+      "stabilityDamage": 28,
+      "hitStopTime": 0.08,
+      "moveBackDistance": 0.9,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 2,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20102,
+    "skillName": "大剑左扫",
+    "hitWeight": 1,
+    "attackRange": 2,
+    "comboNextSkillId": 0,
+    "hitConfig": {
+      "attackMultiplier": 1.6,
+      "stabilityDamage": 28,
+      "hitStopTime": 0.08,
+      "moveBackDistance": 0.9,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 2,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20103,
+    "skillName": "大剑重劈",
+    "hitWeight": 1,
+    "attackRange": 2,
+    "comboNextSkillId": 0,
+    "hitConfig": {
+      "attackMultiplier": 2.2,
+      "stabilityDamage": 42,
+      "hitStopTime": 0.12,
+      "moveBackDistance": 1.35,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 3,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20104,
+    "skillName": "上挑",
+    "hitWeight": 1,
+    "attackRange": 2,
+    "comboNextSkillId": 0,
+    "hitConfig": {
+      "attackMultiplier": 2,
+      "stabilityDamage": 38,
+      "hitStopTime": 0.1,
+      "moveBackDistance": 1.2,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 3,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20105,
+    "skillName": "大剑连招",
+    "hitWeight": 0,
+    "attackRange": 2,
+    "comboNextSkillId": 0,
+    "hitConfig": {
+      "canBeParried": false,
+      "attackMultiplier": 1.35,
+      "stabilityDamage": 24,
+      "hitStopTime": 0.07,
+      "moveBackDistance": 0.75,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 2,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20201,
+    "skillName": "快戳",
+    "hitWeight": 0,
+    "attackRange": 3,
+    "comboNextSkillId": 0,
+    "hitConfig": {
+      "attackMultiplier": 0.95,
+      "stabilityDamage": 13,
+      "hitStopTime": 0.05,
+      "moveBackDistance": 0.35,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 1,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20202,
+    "skillName": "重劈",
+    "hitWeight": 0,
+    "attackRange": 3,
+    "comboNextSkillId": 0,
+    "hitConfig": {
+      "attackMultiplier": 1.85,
+      "stabilityDamage": 34,
+      "hitStopTime": 0.11,
+      "moveBackDistance": 0,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 3,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20203,
+    "skillName": "中段前戳",
+    "hitWeight": 0,
+    "attackRange": 3,
+    "comboNextSkillId": 20204,
+    "hitConfig": {
+      "canBeParried": false,
+      "attackMultiplier": 1.25,
+      "stabilityDamage": 20,
+      "hitStopTime": 0.06,
+      "moveBackDistance": 0.7,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 2,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20204,
+    "skillName": "下端前戳",
+    "hitWeight": 0,
+    "attackRange": 3,
+    "comboNextSkillId": 20205,
+    "hitConfig": {
+      "canBeParried": false,
+      "attackMultiplier": 1.25,
+      "stabilityDamage": 20,
+      "hitStopTime": 0.06,
+      "moveBackDistance": 0.7,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 2,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20205,
+    "skillName": "中段快速前戳",
+    "hitWeight": 0,
+    "attackRange": 3,
+    "comboNextSkillId": 20206,
+    "hitConfig": {
+      "canBeParried": false,
+      "attackMultiplier": 0.9,
+      "stabilityDamage": 12,
+      "hitStopTime": 0.05,
+      "moveBackDistance": 0.65,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 1,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20206,
+    "skillName": "小右劈",
+    "hitWeight": 0,
+    "attackRange": 3,
+    "comboNextSkillId": 0,
+    "hitConfig": {
+      "canBeParried": false,
+      "attackMultiplier": 1,
+      "stabilityDamage": 14,
+      "hitStopTime": 0.05,
+      "moveBackDistance": 0.45,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 1,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20207,
+    "skillName": "上挑",
+    "hitWeight": 0,
+    "attackRange": 3,
+    "comboNextSkillId": 20208,
+    "hitConfig": {
+      "canBeParried": false,
+      "attackMultiplier": 1.3,
+      "stabilityDamage": 22,
+      "hitStopTime": 0.07,
+      "moveBackDistance": 0.75,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 2,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20208,
+    "skillName": "矛镦攻击",
+    "hitWeight": 0,
+    "attackRange": 3,
+    "comboNextSkillId": 20209,
+    "hitConfig": {
+      "canBeParried": false,
+      "attackMultiplier": 0.95,
+      "stabilityDamage": 32,
+      "hitStopTime": 0.08,
+      "moveBackDistance": 0.7,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 3,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20209,
+    "skillName": "大右劈",
+    "hitWeight": 0,
+    "attackRange": 3,
+    "comboNextSkillId": 0,
+    "hitConfig": {
+      "attackMultiplier": 1.35,
+      "stabilityDamage": 23,
+      "hitStopTime": 0.07,
+      "moveBackDistance": 0.8,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 2,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20301,
+    "skillName": "二连斩",
+    "hitWeight": 0,
+    "attackRange": 1.5,
+    "comboNextSkillId": 0,
+    "hitConfig": {
+      "attackMultiplier": 1.2,
+      "stabilityDamage": 15,
+      "hitStopTime": 0.06,
+      "moveBackDistance": 0.5,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 1,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20302,
+    "skillName": "上挑",
+    "hitWeight": 0,
+    "attackRange": 2,
+    "comboNextSkillId": 0,
+    "hitConfig": {
+      "canBeParried": false,
+      "attackMultiplier": 1.2,
+      "stabilityDamage": 15,
+      "hitStopTime": 0.06,
+      "moveBackDistance": 1,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 2,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20303,
+    "skillName": "左劈",
+    "hitWeight": 0,
+    "attackRange": 2,
+    "comboNextSkillId": 0,
+    "hitConfig": {
+      "canBeParried": false,
+      "attackMultiplier": 1.2,
+      "stabilityDamage": 15,
+      "hitStopTime": 0.06,
+      "moveBackDistance": 1,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 1,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20304,
+    "skillName": "盾击",
+    "hitWeight": 0,
+    "attackRange": 3,
+    "comboNextSkillId": 0,
+    "hitConfig": {
+      "canBeParried": false,
+      "attackMultiplier": 1.2,
+      "stabilityDamage": 15,
+      "hitStopTime": 0.06,
+      "moveBackDistance": 1,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 2,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20305,
+    "skillName": "跃击",
+    "hitWeight": 0,
+    "attackRange": 4,
+    "comboNextSkillId": 0,
+    "hitConfig": {
+      "canBeParried": false,
+      "attackMultiplier": 1.2,
+      "stabilityDamage": 15,
+      "hitStopTime": 0.06,
+      "moveBackDistance": 1,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 2,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20306,
+    "skillName": "后撤",
+    "hitWeight": 0,
+    "attackRange": 2,
+    "comboNextSkillId": 0,
+    "hitConfig": {
+      "canBeParried": false,
+      "attackMultiplier": 0,
+      "stabilityDamage": 0,
+      "hitStopTime": 0.06,
+      "moveBackDistance": 0,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 1,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20307,
+    "skillName": "突刺",
+    "hitWeight": 0,
+    "attackRange": 2.5,
+    "comboNextSkillId": 0,
+    "hitConfig": {
+      "attackMultiplier": 1.2,
+      "stabilityDamage": 15,
+      "hitStopTime": 0.06,
+      "moveBackDistance": 0.7,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 2,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20308,
+    "skillName": "快速飞跃",
+    "hitWeight": 0,
+    "attackRange": 5.5,
+    "comboNextSkillId": 0,
+    "hitConfig": {
+      "attackMultiplier": 1.2,
+      "stabilityDamage": 15,
+      "hitStopTime": 0.06,
+      "moveBackDistance": 1,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 2,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20309,
+    "skillName": "反击",
+    "hitWeight": 0,
+    "attackRange": 2,
+    "comboNextSkillId": 0,
+    "hitConfig": {
+      "attackMultiplier": 1.2,
+      "stabilityDamage": 15,
+      "hitStopTime": 0.06,
+      "moveBackDistance": 1,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 2,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20310,
+    "skillName": "盾击2",
+    "hitWeight": 0,
+    "attackRange": 3,
+    "comboNextSkillId": 0,
+    "hitConfig": {
+      "attackMultiplier": 1.2,
+      "stabilityDamage": 15,
+      "hitStopTime": 0.06,
+      "moveBackDistance": 1,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 2,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20401,
+    "skillName": "右上挑",
+    "hitWeight": 0,
+    "attackRange": 2.5,
+    "comboNextSkillId": 20402,
+    "hitConfig": {
+      "canBeParried": false,
+      "attackMultiplier": 2,
+      "stabilityDamage": 38,
+      "hitStopTime": 0.1,
+      "moveBackDistance": 2,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 3,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20402,
+    "skillName": "左上挑",
+    "hitWeight": 0,
+    "attackRange": 2.5,
+    "comboNextSkillId": 20403,
+    "hitConfig": {
+      "canBeParried": false,
+      "attackMultiplier": 2,
+      "stabilityDamage": 38,
+      "hitStopTime": 0.1,
+      "moveBackDistance": 2,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 3,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20403,
+    "skillName": "跃起",
+    "hitWeight": 0,
+    "attackRange": 2,
+    "comboNextSkillId": 20404,
+    "hitConfig": {
+      "canBeParried": false,
+      "attackMultiplier": 1.4,
+      "stabilityDamage": 24,
+      "hitStopTime": 0.07,
+      "moveBackDistance": 1,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 2,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20404,
+    "skillName": "落下劈",
+    "hitWeight": 0,
+    "attackRange": 2,
+    "comboNextSkillId": 0,
+    "hitConfig": {
+      "canBeParried": false,
+      "attackMultiplier": 2.4,
+      "stabilityDamage": 46,
+      "hitStopTime": 0.12,
+      "moveBackDistance": 2.5,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 3,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20405,
+    "skillName": "右扫",
+    "hitWeight": 0,
+    "attackRange": 2.5,
+    "comboNextSkillId": 20406,
+    "hitConfig": {
+      "canBeParried": false,
+      "attackMultiplier": 1.75,
+      "stabilityDamage": 30,
+      "hitStopTime": 0.08,
+      "moveBackDistance": 0.9,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 2,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20406,
+    "skillName": "左扫",
+    "hitWeight": 0,
+    "attackRange": 2.5,
+    "comboNextSkillId": 0,
+    "hitConfig": {
+      "attackMultiplier": 1.75,
+      "stabilityDamage": 30,
+      "hitStopTime": 0.08,
+      "moveBackDistance": 0.9,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 2,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20407,
+    "skillName": "进身攻击1",
+    "hitWeight": 0,
+    "attackRange": 4.5,
+    "comboNextSkillId": 0,
+    "hitConfig": {
+      "attackMultiplier": 1.45,
+      "stabilityDamage": 24,
+      "hitStopTime": 0.07,
+      "moveBackDistance": 0.8,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 2,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20408,
+    "skillName": "进身攻击2",
+    "hitWeight": 0,
+    "attackRange": 5.5,
+    "comboNextSkillId": 0,
+    "hitConfig": {
+      "attackMultiplier": 1.6,
+      "stabilityDamage": 28,
+      "hitStopTime": 0.08,
+      "moveBackDistance": 0.9,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 2,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20409,
+    "skillName": "旋转攻击",
+    "hitWeight": 0,
+    "attackRange": 2,
+    "comboNextSkillId": 0,
+    "hitConfig": {
+      "canBeParried": false,
+      "attackMultiplier": 1.8,
+      "stabilityDamage": 32,
+      "hitStopTime": 0.09,
+      "moveBackDistance": 1,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 3,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  },
+  {
+    "skillId": 20410,
+    "skillName": "后撤",
+    "hitWeight": 0,
+    "attackRange": 2,
+    "comboNextSkillId": 0,
+    "hitConfig": {
+      "attackMultiplier": 0,
+      "stabilityDamage": 0,
+      "hitStopTime": 0.06,
+      "moveBackDistance": 0,
+      "hitReactionName": "GetHit"
+    },
+    "interruptConfig": {
+      "canInterrupt": true,
+      "interruptLevel": 1,
+      "canBeInterrupted": false,
+      "interruptResistLevel": 99,
+      "canInterruptDefence": false
+    },
+    "attackEffects": [],
+    "onHitEffects": [
+      {
+        "triggerKey": "",
+        "effectId": "blood_spray_08",
+        "attachmentOverride": null,
+        "transformOverride": null
+      }
+    ],
+    "onBlockEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "onParryEffects": [
+      {
+        "effectId": "PlayerDefenseHit"
+      }
+    ],
+    "skillAudioConfig": {
+      "castSfxPath": "",
+      "hitSfxPath": ""
+    }
+  }
+]

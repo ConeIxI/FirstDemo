@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "王室亲卫头盔",
+    "iconAddress": "UI/Atlas/Equip/Icon_Equip_Helmet.png",
+    "prefabAddress": "",
+    "objectName" : "Helmet01",
+    "minDefense": 4,
+    "maxDefense": 6
+  },
+  {
+    "id": 2,
+    "name": "双色骑士头盔",
+    "iconAddress": "UI/Atlas/Equip/Icon_Equip_Helmet_02.png",
+    "prefabAddress": "",
+    "objectName" : "Helmet02",
+    "minDefense": 8,
+    "maxDefense": 10
+  },
+  {
+    "id": 3,
+    "name": "金纹头盔",
+    "iconAddress": "UI/Atlas/Equip/Icon_Equip_Helmet_03.png",
+    "prefabAddress": "",
+    "objectName" : "Helmet03",
+    "minDefense": 12,
+    "maxDefense": 15
+  },
+  {
+    "id": 4,
+    "name": "王冠骑士头盔",
+    "iconAddress": "UI/Atlas/Equip/Icon_Equip_Helmet_04.png",
+    "prefabAddress": "",
+    "objectName" : "Helmet04",
+    "minDefense": 17,
+    "maxDefense": 21
+  }
+]

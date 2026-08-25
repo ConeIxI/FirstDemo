@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "王室亲卫臂铠",
+    "iconAddress": "UI/Atlas/Equip/Icon_Equip_ArmGuards.png",
+    "prefabAddress": "",
+    "objectName" : "Armor01",
+    "minDefense": 2,
+    "maxDefense": 3
+  },
+  {
+    "id": 2,
+    "name": "双色骑士臂铠",
+    "iconAddress": "UI/Atlas/Equip/Icon_Equip_ArmGuards_02.png",
+    "prefabAddress": "",
+    "objectName" : "Armor02",
+    "minDefense": 4,
+    "maxDefense": 5
+  },
+  {
+    "id": 3,
+    "name": "金纹臂铠",
+    "iconAddress": "UI/Atlas/Equip/Icon_Equip_ArmGuards_03.png",
+    "prefabAddress": "",
+    "objectName" : "Armor03",
+    "minDefense": 6,
+    "maxDefense": 7
+  },
+  {
+    "id": 4,
+    "name": "王冠骑士臂铠",
+    "iconAddress": "UI/Atlas/Equip/Icon_Equip_ArmGuards_04.png",
+    "prefabAddress": "",
+    "objectName" : "Armor04",
+    "minDefense": 8,
+    "maxDefense": 11
+  }
+]

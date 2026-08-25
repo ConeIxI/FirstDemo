@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: AudioGroup
+  m_EditorClassIdentifier: 
+  m_GroupName: AudioGroup
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 2d630b476efc2ca4f8702771bf18af9b
+  m_SerializeEntries:
+  - m_GUID: 3856740b702cbae438a54e9a641d58e4
+    m_Address: Assets/Res/Audio/Bgm/BossBattleBgm.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3f77fb9d693482f4d8bcc65c05a99ff3
+    m_Address: SFX/Defence.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 95580e9eb53cb824cb9126635122f817
+    m_Address: SFX/PlayerSwordAttack.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 960c65b82b578464d889776a9dd114f0
+    m_Address: SFX/Parry.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aa3f3f79036fe1e409845a10ed786713
+    m_Address: SFX/PlayerSpearAttack.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bf88e057b68e43941abf0baee3b6ab77
+    m_Address: Assets/Res/Audio/Bgm/BattleBgm.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cc695166ac3478c45ba64f1b6ed1c69b
+    m_Address: Assets/Res/Audio/Env/BirdieEnv.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cccc8f5ee55b27a4cbd96eeb39971453
+    m_Address: SFX/Buff.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e1ac6d1ac91c66242b5bff533a68038e
+    m_Address: SFX/EnemySingleAttack.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f2c6d2d1083997542a59eebc251e7ba7
+    m_Address: Assets/Res/Audio/SFX/Step 1.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f61ff4d11c6afc84aa734630eca78cb9
+    m_Address: SFX/Hit.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: ed189498372abf94dad74f229b2fbc5f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 92bcf2a722880764ba01a65877573927, type: 2}
+    - {fileID: 11400000, guid: 4c2d6c0c973d6f341814c3a071bf2dc1, type: 2}

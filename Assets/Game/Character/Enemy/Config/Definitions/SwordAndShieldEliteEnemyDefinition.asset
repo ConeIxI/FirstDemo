@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d2f8d3d3f9c76840a1805f8ed191fcb, type: 3}
+  m_Name: SwordAndShieldEliteEnemyDefinition
+  m_EditorClassIdentifier: 
+  enemyId: SwordAndShieldElite
+  displayName: SwordAndShieldElite
+  behaviorTreeAsset: {fileID: 11400000, guid: 046f1805ec0519441a4c5dfaceb13b57, type: 2}
+  movementConfig:
+    moveSpeed: 2
+    rotateSpeed: 4
+    attackRotateSpeed: 2
+    stoppingDistance: 1.1
+    navMeshSampleDistance: 2
+    patrolWaitDuration: 2
+  perceptionConfig:
+    range: 10
+    soundRange: 2
+    angle: 100
+    closeAwarenessRange: 2
+    loseSightGraceTime: 0.5
+    alertMemoryDuration: 4
+    searchObservationDuration: 5
+    searchRadius: 4
+    searchPointCount: 0
+    targetMask:
+      serializedVersion: 2
+      m_Bits: 128
+    obstacleMask:
+      serializedVersion: 2
+      m_Bits: 0
+  animationConfig:
+    idleAnimation: Idle
+    combatIdleAnimation: CombatIdle
+    combatIdleMoveLeftAnimation: MoveLeft
+    combatIdleMoveRightAnimation: MoveRight
+    enterCombatAnimation: EnterCombat
+    exitCombatAnimation: ExitCombat
+    turnAnimation: Turn
+    alertMoveAnimation: AlertMove
+    moveAnimation: Move
+    runAnimation: Run
+    defenseAnimation: Defense
+    defenseHitAnimation: DefenseHit
+    retreatAnimation: Retreat
+    getHitAnimation: GetHit
+    defenseBreakAnimation: DefenseBreak
+    unbalanceStartAnimation: UnbalanceStart
+    unbalanceStartTrigger: UnbalanceStart
+    unbalanceLoopAnimation: UnbalanceLoop
+    unbalanceEndAnimation: UnbalanceEnd
+    unbalanceEndTrigger: UnbalanceEnd
+    unbalanceLoopDuration: 3
+    deadAnimation: Dead
+    transitionDuration: 0.2
+  combatConfig:
+    basicAttacks:
+    - skillId: 20301
+      animationName: DoubleSlashAttack
+      weight: 1
+      enableAttackDistanceCheck: 1
+    - skillId: 20302
+      animationName: UpperAttack
+      weight: 1
+      enableAttackDistanceCheck: 1
+    - skillId: 20303
+      animationName: LeftChopAttack
+      weight: 0
+      enableAttackDistanceCheck: 0
+    - skillId: 20304
+      animationName: SshieldAttack
+      weight: 0
+      enableAttackDistanceCheck: 0
+    - skillId: 20305
+      animationName: JumpAttack
+      weight: 0
+      enableAttackDistanceCheck: 0
+    - skillId: 20306
+      animationName: Dodge
+      weight: 0
+      enableAttackDistanceCheck: 0
+    - skillId: 20307
+      animationName: EnterAttack
+      weight: 1
+      enableAttackDistanceCheck: 1
+    - skillId: 20310
+      animationName: SshieldAttack
+      weight: 1
+      enableAttackDistanceCheck: 1
+    approachAttacks: []
+    pursuitAttacks:
+    - skillId: 20308
+      animationName: RunAttack
+      weight: 1
+      enableAttackDistanceCheck: 1
+    retreatAttacks: []
+    closeAttackPoolWeight: 1
+    retreatAttackPoolWeight: 0
+    retreatWeightBonusAfterCloseAttack: 0
+    retreatWeightBonusLimit: 0
+    resetRetreatBonusAfterRetreat: 1
+    counterAttack:
+      skillId: 20309
+      animationName: CounterAttack
+      weight: 1
+      enableAttackDistanceCheck: 0
+    comboBranches:
+    - startSkillId: 20302
+      sequenceSkillIds: 4f4f0000504f0000514f0000524f0000
+      probability: 1
+    counterBlockThreshold: 2
+    combatEnterRange: 7
+    chaseRange: 8
+    combatMemoryDuration: 4
+    canInterruptAttack: 0
+  lifeConfig:
+    rememberTargetOnHit: 1
+    allowUnbalanceReaction: 1
+    allowDeathReaction: 1
+  attributeConfig:
+    maxHealth: 260
+    maxStability: 135
+    attack: 45
+    defense: 5
+    moveSpeedMultiplier: 1
+    perceptionMultiplier: 1
+  decisionProfile:
+    attackDesire: 0.55
+    defenseRate: 0.35
+    defenseDuration: 1.5
+    attackDecisionCooldown: 1.5
+    attackWeightCompensationPerMiss: 0.5
+    attackWeightGuaranteeMissCount: 3
+    dodgeRate: 0.8
+    dodgeCooldown: 4
+    lowStabilityThreshold: 0.25
+  dropItems:
+  - itemType: 5
+    itemId: 2
+    count: 1
+    dropChance: 0.292
+  - itemType: 3
+    itemId: 2
+    count: 1
+    dropChance: 0.302
+  - itemType: 2
+    itemId: 2
+    count: 1
+    dropChance: 0.306
+  - itemType: 4
+    itemId: 3
+    count: 1
+    dropChance: 0.802

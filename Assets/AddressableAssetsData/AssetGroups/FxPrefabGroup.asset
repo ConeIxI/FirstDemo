@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: FxPrefabGroup
+  m_EditorClassIdentifier: 
+  m_GroupName: FxPrefabGroup
+  m_Data:
+    m_SerializedData: []
+  m_GUID: ee521e980e0cd78478f70e0e5f6a2ffa
+  m_SerializeEntries:
+  - m_GUID: 158cbe041a8b2b44d88d0a798b3716f3
+    m_Address: VFX/PlayerSingleSwordSplit.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1dc3e0c7ad13b514798ba5a9ccbcde25
+    m_Address: VFX/PlayerSingleSwordPrick.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4aeb5ca3f75860b4b8cb924a80c2d9a8
+    m_Address: VFX/PlayerSingleSwordSlash.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5bbdd0311e9064846b36921c2785138e
+    m_Address: VFX/PlayerSpearSlash.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 63a1e90d633015348a19f09d51c747a0
+    m_Address: VFX/Buff_Defense_Active.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6f4cad6e524a46348b83b8a5239f6003
+    m_Address: VFX/PlayerSpearPrick.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 806c0af709912d240bc8025139ce2ad8
+    m_Address: VFX/DefenseHit.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bdf895fe6c5cee1469100b2affbff2ec
+    m_Address: VFX/Buff_Regen_Active.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c85cde8e10a49b2418926fcb3c48f3d2
+    m_Address: VFX/FX_BloodSpray_08.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e2d2a3cc5a89433449ca965297f0b88a
+    m_Address: VFX/Buff_Attack_Active.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f9287da3626aa4e4fa189a6b0a1983cd
+    m_Address: SFX/EnemyGreatSwordAttack.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: ed189498372abf94dad74f229b2fbc5f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: ee1968c1c699db94398e3de6d6153a26, type: 2}
+    - {fileID: 11400000, guid: 18a38e6e69e7115428f42bc1a0d6f97e, type: 2}
