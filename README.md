@@ -2,6 +2,10 @@
 
 Unity 版本：2022.3.61f1c1
 
+## 直接游玩
+
+如果只想运行已打包版本，不需要克隆工程。到 GitHub Release 页面下载 `FirstDemo.zip`，解压后运行其中的游戏可执行文件即可。
+
 ## 克隆后打开项目
 
 本仓库保持轻量，不使用 Git LFS。`Assets/Res` 大资源不在 Git 仓库内，需要从 GitHub Release 手动下载资源包后补齐。
