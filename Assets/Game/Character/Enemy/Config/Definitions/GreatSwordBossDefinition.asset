@@ -139,7 +139,7 @@ MonoBehaviour:
   attributeConfig:
     maxHealth: 950
     maxStability: 360
-    attack: 68
+    attack: 55
     defense: 12
     moveSpeedMultiplier: 1
     perceptionMultiplier: 1

@@ -102,7 +102,6 @@ namespace GameMain2.Scripts.UI
 
             if (m_gridView != null)
             {
-                m_gridView.ResetCurrentCategory(BagItemType.Weapon, true, false);
                 m_gridView.Hide();
             }
 

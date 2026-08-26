@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Text;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
@@ -26,6 +27,7 @@ namespace GameMain2.Scripts.UI
 
         private BagInventoryManager m_inventory;
         private BagItemType m_currentCategory = BagItemType.Weapon;
+        private bool m_isSyncingToggleState;
 
         public BagItemType CurrentCategory => m_currentCategory;
         public RectTransform BagGrid => m_bagGrid;
@@ -155,36 +157,13 @@ namespace GameMain2.Scripts.UI
         /// </summary>
         public void SetCurrentCategory(BagItemType category, bool updateToggle, bool refresh)
         {
-            SetCurrentCategoryInternal(category, updateToggle, refresh, true);
-        }
-
-        /// <summary>
-        /// 重置当前分类页供下次打开使用，不触发类型按钮红点已读逻辑。
-        /// </summary>
-        public void ResetCurrentCategory(BagItemType category, bool updateToggle, bool refresh)
-        {
-            SetCurrentCategoryInternal(category, updateToggle, refresh, false);
-        }
-
-        /// <summary>
-        /// 设置当前分类页，并按调用场景决定是否清除类型按钮红点。
-        /// </summary>
-        private void SetCurrentCategoryInternal(
-            BagItemType category,
-            bool updateToggle,
-            bool refresh,
-            bool clearTypeRedDot)
-        {
             if (category == BagItemType.None)
             {
                 return;
             }
 
             m_currentCategory = category;
-            if (clearTypeRedDot)
-            {
-                ClearCurrentCategoryRedDot(category);
-            }
+            ClearCurrentCategoryRedDot(category);
 
             if (updateToggle && m_toggles != null)
             {
@@ -201,8 +180,10 @@ namespace GameMain2.Scripts.UI
                                    && toggleType == category
                                    && toggle.gameObject.activeSelf
                                    && selectedCategories.Add(toggleType);
-                    toggle.SetIsOnWithoutNotify(matches);
+                    SetToggleState(toggle, matches);
                 }
+
+                ClearToggleFocus();
             }
 
             if (refresh)
@@ -216,9 +197,15 @@ namespace GameMain2.Scripts.UI
         /// </summary>
         public void ApplyCurrentCategorySelection()
         {
+            if (HasCategoryToggle(m_currentCategory))
+            {
+                SetCurrentCategory(m_currentCategory, true, false);
+                return;
+            }
+
             if (TryGetSelectedCategory(out BagItemType selectedType))
             {
-                SetCurrentCategory(selectedType, false, false);
+                SetCurrentCategory(selectedType, true, false);
                 return;
             }
 
@@ -327,7 +314,7 @@ namespace GameMain2.Scripts.UI
 
                 if (IsAllToggle(toggle))
                 {
-                    toggle.SetIsOnWithoutNotify(false);
+                    SetToggleState(toggle, false);
                     toggle.interactable = false;
                     toggle.gameObject.SetActive(false);
                     continue;
@@ -335,7 +322,7 @@ namespace GameMain2.Scripts.UI
 
                 if (!TryResolveToggleFilter(toggle, out BagItemType filterType))
                 {
-                    toggle.SetIsOnWithoutNotify(false);
+                    SetToggleState(toggle, false);
                     toggle.interactable = false;
                     continue;
                 }
@@ -343,7 +330,7 @@ namespace GameMain2.Scripts.UI
                 // 道具、物品等旧页签都会归一到 Consumable，这里只保留第一个分类入口。
                 if (!visibleCategories.Add(filterType))
                 {
-                    toggle.SetIsOnWithoutNotify(false);
+                    SetToggleState(toggle, false);
                     toggle.interactable = false;
                     toggle.gameObject.SetActive(false);
                     continue;
@@ -351,6 +338,7 @@ namespace GameMain2.Scripts.UI
 
                 toggle.gameObject.SetActive(true);
                 toggle.interactable = true;
+                DisableSelectableHighlight(toggle);
                 CacheToggleRedDot(toggle);
 
                 Toggle capturedToggle = toggle;
@@ -384,12 +372,59 @@ namespace GameMain2.Scripts.UI
         /// </summary>
         private void OnChangedHandler(Toggle toggle, bool isOn)
         {
+            if (m_isSyncingToggleState)
+            {
+                return;
+            }
+
             if (!isOn || !TryResolveToggleFilter(toggle, out BagItemType filterType))
             {
                 return;
             }
 
-            SetCurrentCategory(filterType, false, true);
+            SetCurrentCategory(filterType, true, true);
+        }
+
+        /// <summary>
+        /// 同步 Toggle 选中状态并允许 Toggle 自身刷新视觉，同时屏蔽背包分类业务回调。
+        /// </summary>
+        private void SetToggleState(Toggle toggle, bool isOn)
+        {
+            if (toggle == null)
+            {
+                return;
+            }
+
+            m_isSyncingToggleState = true;
+            toggle.SetIsOnWithoutNotify(isOn);
+            m_isSyncingToggleState = false;
+        }
+
+        /// <summary>
+        /// 清理分类按钮焦点高亮，避免 EventSystem 的 Selected 视觉和 Toggle 选中视觉同时显示。
+        /// </summary>
+        private static void ClearToggleFocus()
+        {
+            if (EventSystem.current == null)
+            {
+                return;
+            }
+
+            EventSystem.current.SetSelectedGameObject(null);
+        }
+
+        /// <summary>
+        /// 禁用分类按钮的 Selectable 焦点高亮，只保留 Toggle graphic 作为唯一选中视觉来源。
+        /// </summary>
+        private static void DisableSelectableHighlight(Toggle toggle)
+        {
+            if (toggle == null)
+            {
+                return;
+            }
+
+            toggle.transition = Selectable.Transition.None;
+            toggle.targetGraphic = null;
         }
 
         /// <summary>
@@ -497,6 +532,31 @@ namespace GameMain2.Scripts.UI
                     && toggle.gameObject.activeSelf
                     && toggle.isOn
                     && TryResolveToggleFilter(toggle, out selectedType))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// 判断当前可见页签中是否存在指定分类，用于打开背包时按内部分类归一化按钮状态。
+        /// </summary>
+        private bool HasCategoryToggle(BagItemType category)
+        {
+            if (m_toggles == null || category == BagItemType.None)
+            {
+                return false;
+            }
+
+            for (int i = 0; i < m_toggles.Length; i++)
+            {
+                Toggle toggle = m_toggles[i];
+                if (toggle != null
+                    && toggle.gameObject.activeSelf
+                    && TryResolveToggleFilter(toggle, out BagItemType toggleType)
+                    && toggleType == category)
                 {
                     return true;
                 }

@@ -454,6 +454,7 @@ namespace GameMain2.Scripts.UI
         public void ShowDeathPanel()
         {
             FadeOutBossBattleBgm();
+            CloseGameplayShortcutPanelsForDeath();
             ClosePanel(UIType.BossHealth);
             UnlockCursor();
             OpenPanel(UIType.Death);
@@ -551,6 +552,11 @@ namespace GameMain2.Scripts.UI
                     continue;
                 }
 
+                if (IsShortcutBlockedByPanelState(definition))
+                {
+                    break;
+                }
+
                 TogglePanelShortcut(definition);
                 break;
             }
@@ -560,6 +566,30 @@ namespace GameMain2.Scripts.UI
         private bool IsShortcutInputBlocked()
         {
             return m_fullInputBlockCount > 0;
+        }
+
+        /// <summary>根据当前面板状态判断指定快捷键是否应被拦截，避免死亡和暂停状态叠加打开其它面板。</summary>
+        private bool IsShortcutBlockedByPanelState(UIShortcutDefinition definition)
+        {
+            if (IsPanelOpenOrLoading(UIType.Death) || IsPanelOpenOrLoading(UIType.Victory))
+            {
+                return true;
+            }
+
+            if (definition.PauseGame)
+            {
+                return false;
+            }
+
+            return IsPanelOpenOrLoading(UIType.Pause)
+                   || IsPanelOpenOrLoading(UIType.Settings)
+                   || IsPanelOpenOrLoading(UIType.ConfirmDialog);
+        }
+
+        /// <summary>判断面板是否已经打开或正在异步加载，用于快捷键互斥时覆盖加载中竞态。</summary>
+        private bool IsPanelOpenOrLoading(UIType type)
+        {
+            return IsPanelOpen(type) || m_loadingPanels.Contains(type);
         }
 
         /// <summary>
@@ -599,6 +629,11 @@ namespace GameMain2.Scripts.UI
         /// </summary>
         public void PauseGame()
         {
+            if (IsPanelOpenOrLoading(UIType.Death) || IsPanelOpenOrLoading(UIType.Victory))
+            {
+                return;
+            }
+
             CombatHitStopController.CancelActiveStopForExternalPause();
             Time.timeScale = 0f;
             UnlockCursor();
@@ -974,6 +1009,15 @@ namespace GameMain2.Scripts.UI
             {
                 ClosePanel(shortcutDefinitions[i].Type);
             }
+        }
+
+        /// <summary>玩家死亡时关闭会和死亡面板冲突的快捷键面板，避免背包或暂停菜单残留在死亡界面下。</summary>
+        private void CloseGameplayShortcutPanelsForDeath()
+        {
+            ClosePanel(UIType.Bag);
+            ClosePanel(UIType.Settings);
+            ClosePanel(UIType.ConfirmDialog);
+            ClosePanel(UIType.Pause);
         }
 
         /// <summary>根据当前战斗场景的可交互面板状态刷新鼠标锁定。</summary>
