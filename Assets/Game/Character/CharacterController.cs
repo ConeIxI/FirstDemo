@@ -40,6 +40,19 @@ namespace Game.Character
         //     get => skillManager;
         // }
 
+        /// <summary>启用时注册角色主体碰撞，角色之间改由水平阻挡逻辑处理。</summary>
+        protected virtual void OnEnable()
+        {
+            EnsureController();
+            CharacterBodyCollisionRegistry.Register(controller);
+        }
+
+        /// <summary>禁用时注销角色主体碰撞，避免静态列表引用失效对象。</summary>
+        protected virtual void OnDisable()
+        {
+            CharacterBodyCollisionRegistry.Unregister(controller);
+        }
+
         /// <summary>按帧处理角色重力，缩放时间暂停时不推进角色位移。</summary>
         private void Update()
         {
@@ -56,11 +69,13 @@ namespace Game.Character
         /// <summary>通过 CharacterController 执行位移。</summary>
         public void Move(Vector3 moveDir)
         {
+            EnsureController();
             if (!this || controller == null)
                 return;
 
-            if (moveDir.sqrMagnitude != 0)
-                controller.Move( moveDir);
+            Vector3 resolvedMove = CharacterBodyCollisionRegistry.ResolveDisplacement(controller, moveDir);
+            if (resolvedMove.sqrMagnitude != 0)
+                controller.Move(resolvedMove);
         }
 
         /// <summary>获取角色上一帧真实水平移动速度，单位为米/秒。</summary>
@@ -96,6 +111,7 @@ namespace Game.Character
         /// <summary>按缩放时间施加重力，暂停或停帧时避免零位移刷新 CharacterController 接地状态。</summary>
         public void ProcessGravity()
         {
+            EnsureController();
             if (!this || controller == null)
                 return;
 
@@ -106,18 +122,22 @@ namespace Game.Character
             }
         }
 
+        /// <summary>按目标方向旋转角色，基类保留给具体角色实现。</summary>
         public virtual void Rotate(Vector3 targetDir)
         { 
             
         }
 
+        /// <summary>立即设置角色朝向，基类保留给具体角色实现。</summary>
         public virtual void RotateInstantly(Quaternion quaternion)
         {
             
         }
 
+        /// <summary>判断当前 Unity CharacterController 是否处于接地状态。</summary>
         public bool IsGrounded()
         {
+            EnsureController();
             if (!this || controller == null)
                 return false;
 
@@ -127,10 +147,20 @@ namespace Game.Character
         /// <summary>设置 Unity CharacterController 的碰撞检测能力，供技能位移期间临时穿过碰撞体。</summary>
         public void SetControllerCollisionEnabled(bool isEnabled)
         {
+            EnsureController();
             if (!this || controller == null)
                 return;
 
             controller.detectCollisions = isEnabled;
+        }
+
+        /// <summary>补齐 Unity CharacterController 引用，支持 prefab 未手动绑定时自动使用同对象组件。</summary>
+        private void EnsureController()
+        {
+            if (controller == null)
+            {
+                TryGetComponent(out controller);
+            }
         }
     }
 }

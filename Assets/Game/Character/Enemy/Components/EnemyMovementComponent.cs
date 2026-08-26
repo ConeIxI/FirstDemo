@@ -1,5 +1,6 @@
 using Game.Character.Enemy.Config;
 using Game.Battle.Ability;
+using Game.Character;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -34,7 +35,20 @@ namespace Game.Character.Enemy.Components
             ResolveMovementComponents();
         }
 
-        // 从敌人定义加载移动数值，Inspector 仅保留移动组件引用。
+        /// <summary>启用时注册敌人主体碰撞，敌人与玩家/敌人之间改由水平阻挡逻辑处理。</summary>
+        private void OnEnable()
+        {
+            ResolveMovementComponents();
+            CharacterBodyCollisionRegistry.Register(controller);
+        }
+
+        /// <summary>禁用时注销敌人主体碰撞，避免静态列表残留失效引用。</summary>
+        private void OnDisable()
+        {
+            CharacterBodyCollisionRegistry.Unregister(controller);
+        }
+
+        /// <summary>从敌人定义加载移动数值，Inspector 仅保留移动组件引用。</summary>
         public void ApplyConfig(EnemyMovementConfig config)
         {
             moveSpeed = config.moveSpeed;
@@ -185,7 +199,8 @@ namespace Game.Character.Enemy.Components
 
             if (controller != null && Application.isPlaying)
             {
-                controller.Move(displacement);
+                Vector3 resolvedDisplacement = CharacterBodyCollisionRegistry.ResolveDisplacement(controller, displacement);
+                controller.Move(resolvedDisplacement);
                 if (CanUseAgent)
                 {
                     agent.nextPosition = transform.position;
@@ -428,7 +443,8 @@ namespace Game.Character.Enemy.Components
             Vector3 displacement = move.normalized * distance;
             if (Application.isPlaying)
             {
-                controller.Move(displacement);
+                Vector3 resolvedDisplacement = CharacterBodyCollisionRegistry.ResolveDisplacement(controller, displacement);
+                controller.Move(resolvedDisplacement);
             }
             else
             {

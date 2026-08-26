@@ -28,11 +28,11 @@ namespace GameMain2.Scripts.UI
             Hide();
         }
 
-        /// <summary>显示指定物品详情，并立即根据鼠标位置摆放面板。</summary>
-        public void Show(BagItemData item, PointerEventData eventData)
+        /// <summary>显示指定物品详情，并根据当前装备生成数值对比表现。</summary>
+        public void Show(BagItemData item, BagItemData equippedItem, PointerEventData eventData)
         {
             EnsureVisuals();
-            ApplyItem(item);
+            ApplyItem(item, equippedItem);
             gameObject.SetActive(true);
             transform.SetAsLastSibling();
             UpdatePosition(eventData);
@@ -120,8 +120,8 @@ namespace GameMain2.Scripts.UI
             }
         }
 
-        /// <summary>把物品数据写入面板图标、名称和详情文本。</summary>
-        private void ApplyItem(BagItemData item)
+        /// <summary>把物品数据和装备对比结果写入面板图标、名称和详情文本。</summary>
+        private void ApplyItem(BagItemData item, BagItemData equippedItem)
         {
             if (iconImage != null)
             {
@@ -136,27 +136,56 @@ namespace GameMain2.Scripts.UI
 
             if (detailText != null)
             {
-                detailText.text = BuildDetailText(item);
+                detailText.text = BuildDetailText(item, equippedItem);
             }
         }
 
         /// <summary>根据物品分类生成详情正文，防具显示防御、武器显示伤害、消耗品显示 Buff 效果。</summary>
-        private static string BuildDetailText(BagItemData item)
+        private static string BuildDetailText(BagItemData item, BagItemData equippedItem)
         {
             switch (item.ItemType)
             {
                 case BagItemType.Weapon:
-                    return $"伤害：{item.AttackBonus}";
+                    return $"伤害：{BuildComparedValueText(item.AttackBonus, GetComparedValue(equippedItem))}";
                 case BagItemType.Helmet:
                 case BagItemType.Armor:
                 case BagItemType.Leggings:
                 case BagItemType.Gloves:
-                    return $"防御：{item.DefenseBonus}";
+                    return $"防御：{BuildComparedValueText(item.DefenseBonus, GetComparedValue(equippedItem))}";
                 case BagItemType.Consumable:
                     return BuildConsumableEffectText(item);
                 default:
                     return string.Empty;
             }
+        }
+
+        /// <summary>按当前装备数值生成颜色和箭头，候选装备更强为绿色上箭头，更弱为红色下箭头。</summary>
+        private static string BuildComparedValueText(int candidateValue, int equippedValue)
+        {
+            if (candidateValue > equippedValue)
+            {
+                return $"<color=#39D66F>{candidateValue} ↑</color>";
+            }
+
+            if (candidateValue < equippedValue)
+            {
+                return $"<color=#E54848>{candidateValue} ↓</color>";
+            }
+
+            return $"<color=#FFFFFF>{candidateValue}</color>";
+        }
+
+        /// <summary>读取当前装备用于对比的核心数值，空装备按 0 处理。</summary>
+        private static int GetComparedValue(BagItemData equippedItem)
+        {
+            if (equippedItem == null)
+            {
+                return 0;
+            }
+
+            return equippedItem.ItemType == BagItemType.Weapon
+                ? equippedItem.AttackBonus
+                : equippedItem.DefenseBonus;
         }
 
         /// <summary>根据消耗品绑定的 Buff 配置自动拼接效果文案。</summary>

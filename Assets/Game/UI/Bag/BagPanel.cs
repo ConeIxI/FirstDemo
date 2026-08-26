@@ -102,6 +102,7 @@ namespace GameMain2.Scripts.UI
 
             if (m_gridView != null)
             {
+                m_gridView.ResetCurrentCategory(BagItemType.Weapon, true, false);
                 m_gridView.Hide();
             }
 
@@ -235,7 +236,7 @@ namespace GameMain2.Scripts.UI
             }
 
             m_detailSlot = slot;
-            m_detailPanel.Show(item, eventData);
+            m_detailPanel.Show(item, ResolveEquippedComparisonItem(item), eventData);
         }
 
         /// <summary>
@@ -257,6 +258,17 @@ namespace GameMain2.Scripts.UI
             if (m_detailSlot == slot)
             {
                 HideDetailPanel();
+            }
+        }
+
+        /// <summary>
+        /// 鼠标经过槽位时清除当前物品的新获得格子红点。
+        /// </summary>
+        public void ClearSlotNewMark(BagSlotView slot)
+        {
+            if (slot != null && m_inventory != null)
+            {
+                m_inventory.ClearNewItem(slot.CurrentItem);
             }
         }
 
@@ -430,6 +442,72 @@ namespace GameMain2.Scripts.UI
             if (m_detailPanel != null)
             {
                 m_detailPanel.Hide();
+            }
+        }
+
+        /// <summary>
+        /// 根据悬停物品类型查找当前玩家已装备的同类物品，用于详情面板数值对比。
+        /// </summary>
+        private BagItemData ResolveEquippedComparisonItem(BagItemData item)
+        {
+            if (item == null || m_inventory == null)
+            {
+                return null;
+            }
+
+            if (item.ItemType == BagItemType.Weapon)
+            {
+                return ResolveEquippedWeaponComparisonItem();
+            }
+
+            BagSlotType slotType = GetEquipmentSlotType(item.ItemType);
+            return slotType == BagSlotType.Bag ? null : m_inventory.GetItem(slotType, 0);
+        }
+
+        /// <summary>
+        /// 查找当前激活武器槽中的物品，缺少激活槽时回退到第一个已装备武器。
+        /// </summary>
+        private BagItemData ResolveEquippedWeaponComparisonItem()
+        {
+            EnsureEquipmentManager();
+            if (m_equipmentManager != null && m_equipmentManager.ActiveWeaponIndex >= 0)
+            {
+                BagItemData activeWeapon = m_inventory.GetItem(BagSlotType.Weapon, m_equipmentManager.ActiveWeaponIndex);
+                if (activeWeapon != null)
+                {
+                    return activeWeapon;
+                }
+            }
+
+            for (int i = 0; i < WeaponSlotCount; i++)
+            {
+                BagItemData weapon = m_inventory.GetItem(BagSlotType.Weapon, i);
+                if (weapon != null)
+                {
+                    return weapon;
+                }
+            }
+
+            return null;
+        }
+
+        /// <summary>
+        /// 把背包物品类型映射到对应装备槽类型。
+        /// </summary>
+        private static BagSlotType GetEquipmentSlotType(BagItemType itemType)
+        {
+            switch (itemType)
+            {
+                case BagItemType.Helmet:
+                    return BagSlotType.Helmet;
+                case BagItemType.Armor:
+                    return BagSlotType.Armor;
+                case BagItemType.Leggings:
+                    return BagSlotType.Leggings;
+                case BagItemType.Gloves:
+                    return BagSlotType.Gloves;
+                default:
+                    return BagSlotType.Bag;
             }
         }
 

@@ -118,6 +118,7 @@ namespace GameMain2.Scripts.Modules.Bag
                 if (mergeTarget != null)
                 {
                     mergeTarget.Count += item.Count;
+                    MarkItemAsNew(mergeTarget);
                     changedItems[i] = mergeTarget;
                     continue;
                 }
@@ -128,6 +129,7 @@ namespace GameMain2.Scripts.Modules.Bag
                     bagIndexes[i],
                     item.Count,
                     item.Defense);
+                MarkItemAsNew(addedItem);
                 AddBagItem(addedItem);
                 changedItems[i] = addedItem;
             }
@@ -139,6 +141,41 @@ namespace GameMain2.Scripts.Modules.Bag
 
             NotifyInventoryChanged();
             return true;
+        }
+
+        /// <summary>
+        /// 判断指定分类按钮是否仍需要显示新物品红点。
+        /// </summary>
+        public bool HasNewItemType(BagItemType itemType)
+        {
+            return m_model.NewItemTypes.Contains(itemType);
+        }
+
+        /// <summary>
+        /// 清除指定分类按钮的新物品红点，不影响具体格子的红点。
+        /// </summary>
+        public void ClearNewItemType(BagItemType itemType)
+        {
+            if (!m_model.NewItemTypes.Remove(itemType))
+            {
+                return;
+            }
+
+            NotifyInventoryChanged();
+        }
+
+        /// <summary>
+        /// 清除指定物品实例的新获得标记，用于鼠标经过格子时隐藏格子红点。
+        /// </summary>
+        public void ClearNewItem(BagItemData item)
+        {
+            if (item == null || !item.IsNew)
+            {
+                return;
+            }
+
+            item.IsNew = false;
+            NotifyInventoryChanged();
         }
 
         /// <summary>
@@ -932,6 +969,20 @@ namespace GameMain2.Scripts.Modules.Bag
             {
                 InventoryChanged.Invoke();
             }
+        }
+
+        /// <summary>
+        /// 标记物品和所属分类为本次运行新获得状态。
+        /// </summary>
+        private void MarkItemAsNew(BagItemData item)
+        {
+            if (item == null || item.ItemType == BagItemType.None)
+            {
+                return;
+            }
+
+            item.IsNew = true;
+            m_model.NewItemTypes.Add(item.ItemType);
         }
     }
 }

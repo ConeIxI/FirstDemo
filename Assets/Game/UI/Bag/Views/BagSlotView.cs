@@ -26,6 +26,7 @@ namespace GameMain2.Scripts.UI
         [SerializeField] private Image backgroundImage;
         [SerializeField] private Image defaultIconImage;
         [SerializeField] private Image itemIconImage;
+        [SerializeField] private Image redDotImage;
         [SerializeField] private TextMeshProUGUI itemNameText;
         [SerializeField] private TextMeshProUGUI countText;
 
@@ -125,6 +126,7 @@ namespace GameMain2.Scripts.UI
                 countText.text = hasItem && item.Count > 1 ? item.Count.ToString() : string.Empty;
             }
 
+            SetRedDotVisible(hasItem && item.IsNew);
         }
 
         /// <summary>
@@ -190,6 +192,7 @@ namespace GameMain2.Scripts.UI
         {
             if (m_owner != null)
             {
+                m_owner.ClearSlotNewMark(this);
                 m_owner.ShowSlotDetail(this, eventData);
             }
         }
@@ -252,6 +255,7 @@ namespace GameMain2.Scripts.UI
             EnsureItemIconImage();
             EnsureNameText();
             EnsureCountText();
+            EnsureRedDotImage();
         }
 
         /// <summary>
@@ -434,6 +438,34 @@ namespace GameMain2.Scripts.UI
 
             countText.raycastTarget = false;
             countText.enableWordWrapping = false;
+        }
+
+        /// <summary>
+        /// 查找 prefab 中预先放好的红点图片，只绑定显隐，不在运行时创建节点。
+        /// </summary>
+        private void EnsureRedDotImage()
+        {
+            if (redDotImage == null)
+            {
+                Transform child = transform.Find("RedDot");
+                redDotImage = child == null ? null : child.GetComponent<Image>();
+            }
+
+            if (redDotImage != null)
+            {
+                redDotImage.raycastTarget = false;
+            }
+        }
+
+        /// <summary>
+        /// 控制格子右上角红点显隐，缺少 prefab 节点时保持静默不创建。
+        /// </summary>
+        private void SetRedDotVisible(bool visible)
+        {
+            if (redDotImage != null)
+            {
+                redDotImage.gameObject.SetActive(visible);
+            }
         }
     }
 }

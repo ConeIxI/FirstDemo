@@ -98,6 +98,30 @@ namespace GameMain2.Scripts.UI
         }
 
         /// <summary>
+        /// 判断指定分类按钮是否需要显示新物品红点。
+        /// </summary>
+        public bool HasNewItemType(BagItemType itemType)
+        {
+            return EnsureBagLogic().HasNewItemType(itemType);
+        }
+
+        /// <summary>
+        /// 清除指定分类按钮的新物品红点。
+        /// </summary>
+        public void ClearNewItemType(BagItemType itemType)
+        {
+            EnsureBagLogic().ClearNewItemType(itemType);
+        }
+
+        /// <summary>
+        /// 清除指定物品实例的新获得红点。
+        /// </summary>
+        public void ClearNewItem(BagItemData item)
+        {
+            EnsureBagLogic().ClearNewItem(item);
+        }
+
+        /// <summary>
         /// 按分类和背包格索引读取指定物品。
         /// </summary>
         public BagItemData GetBagItem(BagItemType itemType, int bagIndex)

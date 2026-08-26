@@ -16,6 +16,8 @@ namespace GameMain2.Scripts.Modules.Bag
         public Dictionary<BagSlotType, BagItemData[]> EquipmentSlots { get; } =
             new Dictionary<BagSlotType, BagItemData[]>();
 
+        public HashSet<BagItemType> NewItemTypes { get; } = new HashSet<BagItemType>();
+
         /// <summary>
         /// 清空背包物品和装备槽数据，用于重新初始化容量或重置存档。
         /// </summary>
@@ -23,6 +25,7 @@ namespace GameMain2.Scripts.Modules.Bag
         {
             BagItemsByType.Clear();
             EquipmentSlots.Clear();
+            NewItemTypes.Clear();
         }
     }
 }

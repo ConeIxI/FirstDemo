@@ -44,6 +44,7 @@ namespace GameMain2.Scripts.UI
         public int Count;
         public int BagIndex;
         public int Defense;
+        public bool IsNew;
         public Sprite Icon;
         public Sprite[] SkillIcons;
 
@@ -250,6 +251,7 @@ namespace GameMain2.Scripts.UI
             BagItemData clonedItem = new BagItemData(item.Id, item.ItemType, item.BagIndex, item.Count, item.Icon);
             clonedItem.BagIndex = item.BagIndex;
             clonedItem.Defense = item.Defense;
+            clonedItem.IsNew = item.IsNew;
             clonedItem.SkillIcons = item.SkillIcons == null
                 ? Array.Empty<Sprite>()
                 : (Sprite[])item.SkillIcons.Clone();

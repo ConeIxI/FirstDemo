@@ -22,6 +22,7 @@ namespace GameMain2.Scripts.UI
         private readonly List<BagSlotView> m_bagSlots = new List<BagSlotView>();
         private readonly Dictionary<Toggle, UnityAction<bool>> m_toggleHandlers =
             new Dictionary<Toggle, UnityAction<bool>>();
+        private readonly Dictionary<Toggle, Image> m_toggleRedDots = new Dictionary<Toggle, Image>();
 
         private BagInventoryManager m_inventory;
         private BagItemType m_currentCategory = BagItemType.Weapon;
@@ -145,6 +146,8 @@ namespace GameMain2.Scripts.UI
                     slot.SetBagItem(item);
                 }
             }
+
+            RefreshToggleRedDots();
         }
 
         /// <summary>
@@ -152,12 +155,37 @@ namespace GameMain2.Scripts.UI
         /// </summary>
         public void SetCurrentCategory(BagItemType category, bool updateToggle, bool refresh)
         {
+            SetCurrentCategoryInternal(category, updateToggle, refresh, true);
+        }
+
+        /// <summary>
+        /// 重置当前分类页供下次打开使用，不触发类型按钮红点已读逻辑。
+        /// </summary>
+        public void ResetCurrentCategory(BagItemType category, bool updateToggle, bool refresh)
+        {
+            SetCurrentCategoryInternal(category, updateToggle, refresh, false);
+        }
+
+        /// <summary>
+        /// 设置当前分类页，并按调用场景决定是否清除类型按钮红点。
+        /// </summary>
+        private void SetCurrentCategoryInternal(
+            BagItemType category,
+            bool updateToggle,
+            bool refresh,
+            bool clearTypeRedDot)
+        {
             if (category == BagItemType.None)
             {
                 return;
             }
 
             m_currentCategory = category;
+            if (clearTypeRedDot)
+            {
+                ClearCurrentCategoryRedDot(category);
+            }
+
             if (updateToggle && m_toggles != null)
             {
                 HashSet<BagItemType> selectedCategories = new HashSet<BagItemType>();
@@ -323,12 +351,15 @@ namespace GameMain2.Scripts.UI
 
                 toggle.gameObject.SetActive(true);
                 toggle.interactable = true;
+                CacheToggleRedDot(toggle);
 
                 Toggle capturedToggle = toggle;
                 UnityAction<bool> handler = isOn => OnChangedHandler(capturedToggle, isOn);
                 m_toggleHandlers.Add(toggle, handler);
                 toggle.onValueChanged.AddListener(handler);
             }
+
+            RefreshToggleRedDots();
         }
 
         /// <summary>
@@ -345,6 +376,7 @@ namespace GameMain2.Scripts.UI
             }
 
             m_toggleHandlers.Clear();
+            m_toggleRedDots.Clear();
         }
 
         /// <summary>
@@ -358,6 +390,93 @@ namespace GameMain2.Scripts.UI
             }
 
             SetCurrentCategory(filterType, false, true);
+        }
+
+        /// <summary>
+        /// 刷新所有分类按钮右上角红点显隐。
+        /// </summary>
+        private void RefreshToggleRedDots()
+        {
+            if (m_toggles == null)
+            {
+                return;
+            }
+
+            for (int i = 0; i < m_toggles.Length; i++)
+            {
+                Toggle toggle = m_toggles[i];
+                if (toggle == null || !TryResolveToggleFilter(toggle, out BagItemType itemType))
+                {
+                    continue;
+                }
+
+                bool visible = toggle.gameObject.activeSelf
+                               && m_inventory != null
+                               && m_inventory.HasNewItemType(itemType);
+                SetToggleRedDotVisible(toggle, visible);
+            }
+        }
+
+        /// <summary>
+        /// 选中分类页时清除该分类按钮红点，格子红点仍由鼠标经过格子单独清除。
+        /// </summary>
+        private void ClearCurrentCategoryRedDot(BagItemType category)
+        {
+            if (m_inventory != null)
+            {
+                m_inventory.ClearNewItemType(category);
+            }
+        }
+
+        /// <summary>
+        /// 缓存 Toggle prefab 中预先放好的 RedDot 图片节点。
+        /// </summary>
+        private void CacheToggleRedDot(Toggle toggle)
+        {
+            if (toggle == null || m_toggleRedDots.ContainsKey(toggle))
+            {
+                return;
+            }
+
+            Image redDot = FindToggleRedDot(toggle);
+            if (redDot == null)
+            {
+                return;
+            }
+
+            redDot.raycastTarget = false;
+            m_toggleRedDots.Add(toggle, redDot);
+        }
+
+        /// <summary>
+        /// 控制指定 Toggle 红点显隐，缺少 prefab 节点时不创建运行时对象。
+        /// </summary>
+        private void SetToggleRedDotVisible(Toggle toggle, bool visible)
+        {
+            if (!m_toggleRedDots.TryGetValue(toggle, out Image redDot) || redDot == null)
+            {
+                return;
+            }
+
+            redDot.gameObject.SetActive(visible);
+        }
+
+        /// <summary>
+        /// 在 Toggle 层级中查找名为 RedDot 的 Image 节点。
+        /// </summary>
+        private static Image FindToggleRedDot(Toggle toggle)
+        {
+            Transform[] children = toggle.GetComponentsInChildren<Transform>(true);
+            for (int i = 0; i < children.Length; i++)
+            {
+                Transform child = children[i];
+                if (child != null && child.name == "RedDot")
+                {
+                    return child.GetComponent<Image>();
+                }
+            }
+
+            return null;
         }
 
         /// <summary>
