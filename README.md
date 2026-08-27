@@ -22,3 +22,6 @@ Unity 版本：2022.3.61f1c1
 - `Assets/AddressableAssetsData`：Addressables 配置。
 - `ProjectSettings`、`Packages`：Unity 工程设置与包锁定文件。
 - `Assets/Res`：通过 Release 附件补齐，不直接进入 Git。
+
+  ## 演示
+- https://www.bilibili.com/video/BV1UR4R6MEW1
